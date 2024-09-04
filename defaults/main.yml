@@ -1,2 +1,6 @@
 ---
 # defaults file for ansible-common-setup
+os_time_zone: Europe/Copenhagen
+os_locale: en_DK.UTF-8
+os_language: en_DK:en
+os_keyboard_layout: dk
