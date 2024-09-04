@@ -1,0 +1,20 @@
+---
+- name: Update repo cache and install a few prerequisite packages
+  apt:
+    pkg: "{{ item }}"
+    state: present
+    update_cache: true
+    cache_valid_time: 3600
+  with_items:
+    - apt-transport-https
+    - ca-certificates
+    - curl
+    - gnupg2
+    - software-properties-common
+    - python3-pip
+    - python3-venv
+    - git
+    - unzip
+    - jq
+    - iproute
+    - lsb-release
